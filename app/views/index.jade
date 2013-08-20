@@ -1,0 +1,38 @@
+extends layout
+
+
+
+mixin displayLink(templateName, isImplemented)
+    -if (isImplemented) {
+        li
+            a(href='/template/#{templateName}')= templateName
+    -}
+    - else {
+        li
+            | #{templateName}
+            b
+                | &nbsp;- not implemented yet
+    -}
+
+
+block body
+    p.lead
+        The list will grow as the templates will be implemented
+    ul
+        +displayLink('starter-template', true)
+        +displayLink('carousel', false)
+        +displayLink('grid', false)
+        +displayLink('jumbotron', false)
+        +displayLink('jumbotron-narrow', false)
+        +displayLink('justified-nav', false)
+        +displayLink('navbar', false)
+        +displayLink('navbar-fixed-top', false)
+        +displayLink('navbar-static-top', false)
+        +displayLink('non-responsive', false)
+        +displayLink('offcanvas', false)
+        +displayLink('screenshots', false)
+        +displayLink('signin', false)
+
+        +displayLink('sticky-footer', false)
+        +displayLink('sticky-footer-navbar', false)
+        +displayLink('theme', false)

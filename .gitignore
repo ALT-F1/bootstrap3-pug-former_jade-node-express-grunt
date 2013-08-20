@@ -1,3 +1,21 @@
+###Security###
+*-config.json
+*mysecrets*
+
+###Intermediate files###
+_gen_dev
+_gen_dist
+_generated
+
+###WebStormIDE###
+.idea
+
+###Istanbul###
+coverage
+libpeerconnection.log
+
+###Node###
+
 lib-cov
 *.seed
 *.log
@@ -12,3 +30,43 @@ logs
 results
 
 npm-debug.log
+node_modules
+
+###OSX###
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+
+###SublimeText###
+
+# SublimeText project files
+*.sublime-workspace
+*.sublime-project
