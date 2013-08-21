@@ -8,15 +8,23 @@ bootstrap3-jade-node
 The secrets I can't share with anyone
 
 ## Getting Started
-Install the module with: `npm install`
-Run with: `Grunt`
++ git clone https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt.git
++ `cd bootstrap3-jade-node-express-grunt.git`
++ install [NodeJS] (globally)
++ install [Grunt] (globally)
++ Install the module with: `npm install` (locally, a node_modules directory will be created)
++ Start the server with: `Grunt`
 
 ## Documentation
-start the server
+
++ start the server
++ click on the links leading you to the [Bootstrap Twitter] templates translated into Jade
++ Use the *.jade files into your projects !
 
 ## Examples
-open [http://localhost:3001/](http://localhost:3001/)
-open the [Starter template](http://localhost:3001/template/starter-template)
+
++ open [http://localhost:3001/](http://localhost:3001/)
++ open the [Starter template](http://localhost:3001/template/starter-template)
 
 ## Contributing
 Feel free to help me convert all the templates:
@@ -40,12 +48,17 @@ Feel free to help me convert all the templates:
 
 ## Release History
 
+TODOs
+
++ add front end test against html pages
+
 v2013-08-21
 
 + [Twitter Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
 
 ## License
 Copyright (c) 2013 ALT-F1, We believe in the projects we work on™
+
 Licensed under the MIT license.
 
 
