@@ -5,11 +5,11 @@ bootstrap3-jade-node
 
 # bootstrap3-jade-node
 
-The secrets I can't share with anyone
++ Do you accelerate the speed to bootstrap your web applications?
 
 ## Getting Started
 + git clone https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt.git
-+ `cd bootstrap3-jade-node-express-grunt.git`
++ `cd bootstrap3-jade-node-express-grunt`
 + install [NodeJS] (globally)
 + install [Grunt] (globally)
 + Install the module with: `npm install` (locally, a node_modules directory will be created)
