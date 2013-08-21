@@ -1,7 +1,7 @@
 bootstrap3-jade-node
 ====================
 
-[Bootstrap 3 samples] rendered using [Jade], [Node], [Express] and [Grunt]
+[Bootstrap 3 samples] rendered using [Jade], [NodeJS], [Express] and [Grunt]
 
 # bootstrap3-jade-node
 
@@ -55,6 +55,7 @@ TODOs
 v2013-08-21
 
 + [Twitter Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
++ Convert [starter-template.html](http://twbs.github.io/bootstrap/examples/starter-template/) template into [starter-template.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
 
 ## License
 Copyright (c) 2013 ALT-F1, We believe in the projects we work on™
