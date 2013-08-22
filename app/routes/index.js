@@ -22,6 +22,9 @@ module.exports = function (app) {
         res.redirect('http://www.alt-f1.be/contact-us.html');
     });
     app.get('/template/:selectedTemplate', function (req, res) {
-        res.render('bootstrap3-templates/' + req.params.selectedTemplate, {});
+        res.render('bootstrap3-templates/' + req.params.selectedTemplate, {
+            'pathToAssets': '/bootstrap-3.0.0',
+            'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.0.0/examples/' + req.params.selectedTemplate
+        });
     });
 };

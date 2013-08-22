@@ -21,6 +21,10 @@ bootstrap3-jade-node
 + click on the links leading you to the [Bootstrap Twitter] templates translated into Jade
 + Use the *.jade files into your projects !
 
++ html vs. jade converstion
+    + We use [html2jade] to translate automatically the html into a jade file
+    + we indent the
+
 ## Examples
 
 + open [http://localhost:3001/](http://localhost:3001/)
@@ -29,7 +33,7 @@ bootstrap3-jade-node
 ## Contributing
 Feel free to help me convert all the templates:
 
-+ [ ] carousel
++ [X] carousel
 + [ ] grid
 + [ ] jumbotron
 + [ ] jumbotron-narrow
@@ -51,6 +55,10 @@ Feel free to help me convert all the templates:
 TODOs
 
 + add front end test against html pages
+
+v2013-08-22
+
++ Convert [carousel.html](http://twbs.github.io/bootstrap/examples/carousel/) template into [carousel.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
 
 v2013-08-21
 
@@ -76,6 +84,7 @@ Licensed under the MIT license.
 [Google Compute Engine]: https://cloud.google.com/products/compute-engine
 [Grunt-nodemon]: https://github.com/remy/nodemon
 [Grunt]: http://gruntjs.com/
+[html2jade]: https://github.com/donpark/html2jade
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [Jade]: http://jade-lang.com/
 [Jasmine]: http://pivotal.github.io/jasmine/

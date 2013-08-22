@@ -6,19 +6,19 @@ head
         meta(name='description', content='')
         meta(name='author', content='')
         meta(name='copyright', content='Copyright (c) 2013 ALT-F1, We believe in the projects we work on™')
-        link(rel='shortcut icon', href='/bootstrap-3.0.0/assets/ico/favicon.png')
+        link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
         title Starter Template for Bootstrap
     //
            Bootstrap core CSS
-        link(href='/bootstrap-3.0.0/dist/css/bootstrap.css', rel='stylesheet')
+        link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
     //
            Custom styles for this template
-        link(href='/bootstrap-3.0.0/examples/starter-template/starter-template.css', rel='stylesheet')
+        link(href='#{pathToSelectedTemplateWithinBootstrap}/starter-template.css', rel='stylesheet')
     //
            HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
         //if lt IE 9
-          script(src='/bootstrap-3.0.0/assets/js/html5shiv.js')
-          script(src='/bootstrap-3.0.0/assets/js/respond.min.js')
+          script(src='#{pathToAssets}/assets/js/html5shiv.js')
+          script(src='#{pathToAssets}/assets/js/respond.min.js')
 body
     .navbar.navbar-inverse.navbar-fixed-top
         .container
@@ -52,5 +52,5 @@ body
 
 //
        Placed at the end of the document so the pages load faster
-script(src='/bootstrap-3.0.0/assets/js/jquery.js').
-script(src='/bootstrap-3.0.0/dist/js/bootstrap.min.js')
+script(src='#{pathToAssets}/assets/js/jquery.js').
+script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
