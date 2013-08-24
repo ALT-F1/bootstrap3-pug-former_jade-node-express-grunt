@@ -1,0 +1,77 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Justified Nav Template for Bootstrap
+    //
+       Bootstrap core CSS 
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    //
+       Custom styles for this template 
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/justified-nav.css', rel='stylesheet')
+    //
+       HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    .container
+      .masthead
+        h3.text-muted Project name
+        ul.nav.nav-justified
+          li.active
+            a(href='#') Home
+          li
+            a(href='#') Projects
+          li
+            a(href='#') Services
+          li
+            a(href='#') Downloads
+          li
+            a(href='#') About
+          li
+            a(href='#') Contact
+      //
+         Jumbotron 
+      .jumbotron
+        h1 Marketing stuff!
+        p.lead
+          | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+        p
+          a.btn.btn-lg.btn-success(href='#') Get started today
+      //
+         Example row of columns 
+      .row
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-primary(href='#') View details »
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          p
+            a.btn.btn-primary(href='#') View details »
+        .col-lg-4
+          h2 Heading
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+          p
+            a.btn.btn-primary(href='#') View details »
+      //
+         Site footer 
+      .footer
+        p &copy; Company 2013
+    //
+       /container 
+    //
+       Bootstrap core JavaScript
+    // ==================================================
+    //
+       Placed at the end of the document so the pages load faster 

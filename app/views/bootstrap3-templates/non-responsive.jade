@@ -1,0 +1,93 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+       Note there is no responsive meta tag here 
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Non-responsive Template for Bootstrap
+    //
+       Bootstrap core CSS 
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    //
+       Custom styles for this template 
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/non-responsive.css', rel='stylesheet')
+    //
+       HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    //
+       Fixed navbar 
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Project name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li.dropdown-header Nav header
+                li
+                  a(href='#') Separated link
+                li
+                  a(href='#') One more separated link
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Link
+            li
+              a(href='#') Link
+            li
+              a(href='#') Link
+        //
+          /.nav-collapse 
+    .container
+      .page-header
+        h1 Non-responsive Bootstrap
+        p.lead
+          | Disable the responsiveness of Bootstrap by fixing the width of the container and using the first grid system tier.
+      h3 What changes
+      p
+        | Note the lack of the
+        code &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        | , which disables the zooming aspect of sites in mobile devices. In addition, we reset our container's width and are basically good to go.
+      h3 Regarding navbars
+      p
+        | As a heads up, the navbar component is rather tricky here in that the styles for displaying it are rather specific and detailed. Overrides to ensure desktop styles display are not as performant or sleek as one would like. Just be aware there may be potential gotchas as you build on top of this example when using the navbar.
+      h3 Non-responsive grid system
+      .row
+        .col-xs-4 One third
+        .col-xs-4 One third
+        .col-xs-4 One third
+    //
+       /container 
+    //
+       Bootstrap core JavaScript
+    // ================================================== 
+    //
+       Placed at the end of the document so the pages load faster 
+    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')

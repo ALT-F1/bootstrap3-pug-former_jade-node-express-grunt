@@ -5,9 +5,10 @@ bootstrap3-jade-node
 
 # bootstrap3-jade-node
 
-+ Do you accelerate the speed to bootstrap your web applications?
++ Do you want to accelerate the bootstrapping of your web applications?
 
 ## Getting Started
+
 + git clone https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt.git
 + `cd bootstrap3-jade-node-express-grunt`
 + install [NodeJS] (globally)
@@ -21,9 +22,11 @@ bootstrap3-jade-node
 + click on the links leading you to the [Bootstrap Twitter] templates translated into Jade
 + Use the *.jade files into your projects !
 
-+ html vs. jade converstion
++ html vs. jade conversion
     + We use [html2jade] to translate automatically the html into a jade file
-    + we indent the
+    + Remove the characters as Jade complains as it believes it has to interpret the code  `=================================================`
+    + replace inside the jade file the path to the JS and CSS files from [Bootstrap Twitter]:  `../..` with the parameter `#{pathToAssets}`
+    + change the link to the custom made CSS made for each template stored under the `bootstrap-3.0.0/examples/` directory :  `#{pathToSelectedTemplateWithinBootstrap}`
 
 ## Examples
 
@@ -33,28 +36,40 @@ bootstrap3-jade-node
 ## Contributing
 Feel free to help me convert all the templates:
 
-+ [X] carousel
-+ [ ] grid
-+ [ ] jumbotron
-+ [ ] jumbotron-narrow
-+ [ ] justified-nav
-+ [ ] navbar
-+ [ ] navbar-fixed-top
-+ [ ] navbar-static-top
-+ [ ] non-responsive
-+ [ ] offcanvas
-+ [ ] screenshots
-+ [ ] signin
-+ [X] starter-template
-+ [ ] sticky-footer
-+ [ ] sticky-footer-navbar
-+ [ ] theme
++ [X] [carousel](http://twbs.github.io/bootstrap/examples/carousel/)
++ [X] [grid](http://twbs.github.io/bootstrap/examples/grid/)
++ [X] [jumbotron](http://twbs.github.io/bootstrap/examples/jumbotron/)
++ [X] [jumbotron-narrow](http://twbs.github.io/bootstrap/examples/jumbotron-narrow/)
++ [X] [justified-nav](http://twbs.github.io/bootstrap/examples/justified-nav/)
++ [X] [navbar](http://twbs.github.io/bootstrap/examples/navbar/)
++ [X] [navbar-fixed-top](http://twbs.github.io/bootstrap/examples/navbar-fixed-top/)
++ [X] [navbar-static-top](http://twbs.github.io/bootstrap/examples/navbar-static-top/)
++ [X] [non-responsive](http://twbs.github.io/bootstrap/examples/non-responsive/)
++ [ ] [offcanvas](http://twbs.github.io/bootstrap/examples/offcanvas/)
++ [ ] [signin](http://twbs.github.io/bootstrap/examples/signin/)
++ [X] [starter-template](http://twbs.github.io/bootstrap/examples/starter-template/)
++ [ ] [sticky-footer](http://twbs.github.io/bootstrap/examples/sticky-footer/)
++ [ ] [sticky-footer-navbar](http://twbs.github.io/bootstrap/examples/sticky-footer-navbar/)
++ [ ] [theme](http://twbs.github.io/bootstrap/examples/theme/)
 
 ## Release History
 
 TODOs
 
 + add front end test against html pages
+
+v2013-08-24
+
++ Convert [grid.html](http://twbs.github.io/bootstrap/examples/grid/) template into [grid.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [jumbotron.html](http://twbs.github.io/bootstrap/examples/jumbotron/) template into [jumbotron.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [jumbotron-narrow.html](http://twbs.github.io/bootstrap/examples/jumbotron-narrow/) template into [jumbotron-narrow.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [justified-nav.html](http://twbs.github.io/bootstrap/examples/justified-nav/) template into [justified-nav.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [justified-nav.html](http://twbs.github.io/bootstrap/examples/justified-nav/) template into [justified-nav.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [navbar.html](http://twbs.github.io/bootstrap/examples/navbar/) template into [navbar.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [navbar-fixed-top.html](http://twbs.github.io/bootstrap/examples/navbar-fixed-top/) template into [navbar-fixed-top.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [navbar-static-top.html](http://twbs.github.io/bootstrap/examples/navbar-static-top/) template into [navbar-static-top.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [non-responsive.html](http://twbs.github.io/bootstrap/examples/non-responsive/) template into [non-responsive.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ add an issue on the [html2jade] project as ["escaped characters are wrongly translated into html. e.g. &lt; becomes > while it shouldn't be"](https://github.com/donpark/html2jade/issues/57)
 
 v2013-08-22
 

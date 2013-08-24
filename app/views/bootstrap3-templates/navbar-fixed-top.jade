@@ -1,0 +1,84 @@
+!!! 5
+html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Fixed Top Navbar Example for Bootstrap
+    //
+       Bootstrap core CSS 
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    //
+       Custom styles for this template 
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/navbar-fixed-top.css', rel='stylesheet')
+    //
+       HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    //
+       Fixed navbar 
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Project name
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li.dropdown-header Nav header
+                li
+                  a(href='#') Separated link
+                li
+                  a(href='#') One more separated link
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='../navbar') Default
+            li
+              a(href='../navbar-static-top') Static top
+            li.active
+              a(href='') Fixed top
+        //
+          /.nav-collapse 
+    .container
+      //
+         Main component for a primary marketing message or call to action 
+      .jumbotron
+        h1 Navbar example
+        p
+          | This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+        p To see the difference between static and fixed top navbars, just scroll.
+        p
+          a.btn.btn-lg.btn-primary(href='http://getbootstrap.com/components/#navbar') View navbar docs »
+    //
+       /container 
+    //
+       Bootstrap core JavaScript
+    // ================================================== 
+    //
+       Placed at the end of the document so the pages load faster 
+    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
