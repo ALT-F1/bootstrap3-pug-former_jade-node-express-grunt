@@ -3,35 +3,46 @@ extends layout
 
 
 mixin displayLink(templateName, isImplemented)
+    tr
     -if (isImplemented) {
-        li
+        th
             a(href='/template/#{templateName}')= templateName
+        th
+            a(href='http://twbs.github.io/bootstrap/examples/#{templateName}')= templateName
     -}
     - else {
-        li
+        th
             | #{templateName}
             b
                 | &nbsp;- not implemented yet
+        th
+            a(href='http://twbs.github.io/bootstrap/examples/#{templateName}')= templateName
     -}
 
 
 block body
-    p.lead
-        The list will grow as the templates will be implemented
-    ul
-        +displayLink('starter-template', true)
-        +displayLink('carousel', true)
-        +displayLink('grid', true)
-        +displayLink('jumbotron', true)
-        +displayLink('jumbotron-narrow', true)
-        +displayLink('justified-nav', true)
-        +displayLink('navbar', true)
-        +displayLink('navbar-fixed-top', true)
-        +displayLink('navbar-static-top', true)
-        +displayLink('non-responsive', true)
 
-        +displayLink('offcanvas', false)
-        +displayLink('signin', false)
-        +displayLink('sticky-footer', false)
-        +displayLink('sticky-footer-navbar', false)
-        +displayLink('theme', false)
+    p.lead
+        | All bootstrap 3 templates have been converted into Jade templates; enjoy !
+
+    table.table.table-condensed
+        thead
+            tr
+                th Jade version
+                th HTML version
+        tbody
+            +displayLink('starter-template', true)
+            +displayLink('carousel', true)
+            +displayLink('grid', true)
+            +displayLink('jumbotron', true)
+            +displayLink('jumbotron-narrow', true)
+            +displayLink('justified-nav', true)
+            +displayLink('navbar', true)
+            +displayLink('navbar-fixed-top', true)
+            +displayLink('navbar-static-top', true)
+            +displayLink('non-responsive', true)
+            +displayLink('offcanvas', true)
+            +displayLink('signin', true)
+            +displayLink('sticky-footer', true)
+            +displayLink('sticky-footer-navbar', true)
+            +displayLink('theme', true)

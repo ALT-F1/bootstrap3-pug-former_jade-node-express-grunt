@@ -1,0 +1,325 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Theme Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    // Bootstrap theme
+    link(href='#{pathToAssets}/dist/css/bootstrap-theme.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/theme.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    // Fixed navbar
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Bootstrap theme
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Dropdown
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li.dropdown-header Nav header
+                li
+                  a(href='#') Separated link
+                li
+                  a(href='#') One more separated link
+        // /.nav-collapse
+    .container.theme-showcase
+      // Main jumbotron for a primary marketing message or call to action
+      .jumbotron
+        h1 Hello, world!
+        p
+          | This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        p
+          a.btn.btn-primary.btn-lg Learn more »
+      .page-header
+        h1 Buttons
+      p
+        button.btn.btn-lg.btn-default(type='button') Default
+        button.btn.btn-lg.btn-primary(type='button') Primary
+        button.btn.btn-lg.btn-success(type='button') Success
+        button.btn.btn-lg.btn-info(type='button') Info
+        button.btn.btn-lg.btn-warning(type='button') Warning
+        button.btn.btn-lg.btn-danger(type='button') Danger
+        button.btn.btn-lg.btn-link(type='button') Link
+      p
+        button.btn.btn-default(type='button') Default
+        button.btn.btn-primary(type='button') Primary
+        button.btn.btn-success(type='button') Success
+        button.btn.btn-info(type='button') Info
+        button.btn.btn-warning(type='button') Warning
+        button.btn.btn-danger(type='button') Danger
+        button.btn.btn-link(type='button') Link
+      p
+        button.btn.btn-sm.btn-default(type='button') Default
+        button.btn.btn-sm.btn-primary(type='button') Primary
+        button.btn.btn-sm.btn-success(type='button') Success
+        button.btn.btn-sm.btn-info(type='button') Info
+        button.btn.btn-sm.btn-warning(type='button') Warning
+        button.btn.btn-sm.btn-danger(type='button') Danger
+        button.btn.btn-sm.btn-link(type='button') Link
+      p
+        button.btn.btn-xs.btn-default(type='button') Default
+        button.btn.btn-xs.btn-primary(type='button') Primary
+        button.btn.btn-xs.btn-success(type='button') Success
+        button.btn.btn-xs.btn-info(type='button') Info
+        button.btn.btn-xs.btn-warning(type='button') Warning
+        button.btn.btn-xs.btn-danger(type='button') Danger
+        button.btn.btn-xs.btn-link(type='button') Link
+      .page-header
+        h1 Thumbnails
+      img.img-thumbnail(data-src='holder.js/200x200', src='data:image/png;base64,', alt='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera')
+      .page-header
+        h1 Dropdown menus
+      .dropdown.theme-dropdown.clearfix
+        a#dropdownMenu1.sr-only.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+          | Dropdown
+          b.caret
+        ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Action
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Another action
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Something else here
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Separated link
+      .page-header
+        h1 Navbars
+      .navbar.navbar-default
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') Project name
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.dropdown-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/template/navbar') Default
+              li
+                a(href='/template/navbar-static-top') Static top
+              li.active
+                a(href='') Fixed top
+          // /.nav-collapse
+      .navbar.navbar-inverse
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') Project name
+          .navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.dropdown-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/template/navbar') Default
+              li
+                a(href='/template/navbar-static-top') Static top
+              li.active
+                a(href='') Fixed top
+          // /.nav-collapse
+      .page-header
+        h1 Alerts
+      .alert.alert-success
+        strong Well done!&nbsp;
+        | You successfully read this important alert message.
+      .alert.alert-info
+        strong Heads up!&nbsp;
+        | This alert needs your attention, but it's not super important.
+      .alert.alert-warning
+        strong Warning!&nbsp;
+        | Best check yo self, you're not looking too good.
+      .alert.alert-danger
+        strong Oh snap!&nbsp;
+        | Change a few things up and try submitting again.
+      .page-header
+        h1 Progress bars
+      .progress
+        .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+          span.sr-only 60% Complete
+      .progress
+        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+          span.sr-only 40% Complete (success)
+      .progress
+        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%;')
+          span.sr-only 20% Complete
+      .progress
+        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+          span.sr-only 60% Complete (warning)
+      .progress
+        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+          span.sr-only 80% Complete (danger)
+      .progress
+        .progress-bar.progress-bar-success(style='width: 35%;')
+          span.sr-only 35% Complete (success)
+        .progress-bar.progress-bar-warning(style='width: 20%;')
+          span.sr-only 20% Complete (warning)
+        .progress-bar.progress-bar-danger(style='width: 10%;')
+          span.sr-only 10% Complete (danger)
+      .page-header
+        h1 List groups
+      .row
+        .col-sm-4
+          ul.list-group
+            li.list-group-item Cras justo odio
+            li.list-group-item Dapibus ac facilisis in
+            li.list-group-item Morbi leo risus
+            li.list-group-item Porta ac consectetur ac
+            li.list-group-item Vestibulum at eros
+        // /.col-sm-4
+        .col-sm-4
+          .list-group
+            a.list-group-item.active(href='#')
+              | Cras justo odio
+            a.list-group-item(href='#') Dapibus ac facilisis in
+            a.list-group-item(href='#') Morbi leo risus
+            a.list-group-item(href='#') Porta ac consectetur ac
+            a.list-group-item(href='#') Vestibulum at eros
+        // /.col-sm-4
+        .col-sm-4
+          .list-group
+            a.list-group-item.active(href='#')
+              h4.list-group-item-heading List group item heading
+              p.list-group-item-text
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+            a.list-group-item(href='#')
+              h4.list-group-item-heading List group item heading
+              p.list-group-item-text
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+            a.list-group-item(href='#')
+              h4.list-group-item-heading List group item heading
+              p.list-group-item-text
+                | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+        // /.col-sm-4
+      .page-header
+        h1 Panels
+      .row
+        .col-sm-4
+          .panel.panel-default
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+          .panel.panel-primary
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+        // /.col-sm-4
+        .col-sm-4
+          .panel.panel-success
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+          .panel.panel-info
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+        // /.col-sm-4
+        .col-sm-4
+          .panel.panel-warning
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+          .panel.panel-danger
+            .panel-heading
+              h3.panel-title Panel title
+            .panel-body
+              | Panel content
+        // /.col-sm-4
+      .page-header
+        h1 Wells
+      .well
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+    // /container
+    //
+       Bootstrap core JavaScript
+    //================================================== 
+    // Placed at the end of the document so the pages load faster
+    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
+    script(src='#{pathToAssets}/assets/js/holder.js')

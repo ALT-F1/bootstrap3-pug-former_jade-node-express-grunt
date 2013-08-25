@@ -1,0 +1,32 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Signin Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/signin.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    .container
+      form.form-signin
+        h2.form-signin-heading Please sign in
+        input.form-control(type='text', placeholder='Email address', autofocus='autofocus')
+        input.form-control(type='password', placeholder='Password')
+        label.checkbox
+          input(type='checkbox', value='remember-me')
+          | Remember me
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+    // /container
+    //
+       Bootstrap core JavaScript
+    //================================================== 
+    // Placed at the end of the document so the pages load faster

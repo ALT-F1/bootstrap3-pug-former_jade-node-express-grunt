@@ -19,10 +19,10 @@ bootstrap3-jade-node
 ## Documentation
 
 + start the server
-+ click on the links leading you to the [Bootstrap Twitter] templates translated into Jade
++ click on the links leading you to the [Twitter Bootstrap] templates translated into Jade
 + Use the *.jade files into your projects !
 
-+ html vs. jade conversion
++ how did we convert the html into jade
     + We use [html2jade] to translate automatically the html into a jade file
     + Remove the characters as Jade complains as it believes it has to interpret the code  `=================================================`
     + replace inside the jade file the path to the JS and CSS files from [Bootstrap Twitter]:  `../..` with the parameter `#{pathToAssets}`
@@ -36,27 +36,36 @@ bootstrap3-jade-node
 ## Contributing
 Feel free to help me convert all the templates:
 
-+ [X] [carousel](http://twbs.github.io/bootstrap/examples/carousel/)
-+ [X] [grid](http://twbs.github.io/bootstrap/examples/grid/)
-+ [X] [jumbotron](http://twbs.github.io/bootstrap/examples/jumbotron/)
-+ [X] [jumbotron-narrow](http://twbs.github.io/bootstrap/examples/jumbotron-narrow/)
-+ [X] [justified-nav](http://twbs.github.io/bootstrap/examples/justified-nav/)
-+ [X] [navbar](http://twbs.github.io/bootstrap/examples/navbar/)
-+ [X] [navbar-fixed-top](http://twbs.github.io/bootstrap/examples/navbar-fixed-top/)
-+ [X] [navbar-static-top](http://twbs.github.io/bootstrap/examples/navbar-static-top/)
-+ [X] [non-responsive](http://twbs.github.io/bootstrap/examples/non-responsive/)
-+ [ ] [offcanvas](http://twbs.github.io/bootstrap/examples/offcanvas/)
-+ [ ] [signin](http://twbs.github.io/bootstrap/examples/signin/)
-+ [X] [starter-template](http://twbs.github.io/bootstrap/examples/starter-template/)
-+ [ ] [sticky-footer](http://twbs.github.io/bootstrap/examples/sticky-footer/)
-+ [ ] [sticky-footer-navbar](http://twbs.github.io/bootstrap/examples/sticky-footer-navbar/)
-+ [ ] [theme](http://twbs.github.io/bootstrap/examples/theme/)
+- [X] [carousel](http://twbs.github.io/bootstrap/examples/carousel/)
+- [X] [grid](http://twbs.github.io/bootstrap/examples/grid/)
+- [X] [jumbotron](http://twbs.github.io/bootstrap/examples/jumbotron/)
+- [X] [jumbotron-narrow](http://twbs.github.io/bootstrap/examples/jumbotron-narrow/)
+- [X] [justified-nav](http://twbs.github.io/bootstrap/examples/justified-nav/)
+- [X] [navbar](http://twbs.github.io/bootstrap/examples/navbar/)
+- [X] [navbar-fixed-top](http://twbs.github.io/bootstrap/examples/navbar-fixed-top/)
+- [X] [navbar-static-top](http://twbs.github.io/bootstrap/examples/navbar-static-top/)
+- [X] [non-responsive](http://twbs.github.io/bootstrap/examples/non-responsive/)
+- [X] [offcanvas](http://twbs.github.io/bootstrap/examples/offcanvas/)
+- [X] [signin](http://twbs.github.io/bootstrap/examples/signin/)
+- [X] [starter-template](http://twbs.github.io/bootstrap/examples/starter-template/)
+- [X] [sticky-footer](http://twbs.github.io/bootstrap/examples/sticky-footer/)
+- [X] [sticky-footer-navbar](http://twbs.github.io/bootstrap/examples/sticky-footer-navbar/)
+- [X] [theme](http://twbs.github.io/bootstrap/examples/theme/)
 
 ## Release History
 
 TODOs
 
 + add front end test against html pages
+
+v2013-08-25
+
++ Convert [offcanvas.html](http://twbs.github.io/bootstrap/examples/offcanvas/) template into [offcanvas.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [signin.html](http://twbs.github.io/bootstrap/examples/signin/) template into [signin.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [starter-template.html](http://twbs.github.io/bootstrap/examples/starter-template/) template into [starter-template.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [sticky-footer.html](http://twbs.github.io/bootstrap/examples/sticky-footer/) template into [sticky-footer.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [sticky-footer-navbar.html](http://twbs.github.io/bootstrap/examples/sticky-footer-navbar/) template into [sticky-footer-navbar.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
++ Convert [theme.html](http://twbs.github.io/bootstrap/examples/theme/) template into [theme.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
 
 v2013-08-24
 
@@ -77,7 +86,7 @@ v2013-08-22
 
 v2013-08-21
 
-+ [Twitter Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
+- [Twitter Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
 + Convert [starter-template.html](http://twbs.github.io/bootstrap/examples/starter-template/) template into [starter-template.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
 
 ## License

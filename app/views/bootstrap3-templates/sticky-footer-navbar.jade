@@ -1,0 +1,85 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Sticky Footer Navbar Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/sticky-footer-navbar.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    // Wrap all page content here
+    #wrap
+      // Fixed navbar
+      .navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#') Project name
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li.dropdown-header Nav header
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+          // /.nav-collapse
+      // Begin page content
+      .container
+        .page-header
+          h1 Sticky footer with fixed navbar
+        p.lead
+          | Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within 
+          code #wrap 
+          | with 
+          code padding-top: 60px; 
+          | on the 
+          code .container
+          | .
+        p
+          | Back to 
+          a(href='/template/sticky-footer') the default sticky footer 
+          | minus the navbar.
+    #footer
+      .container
+        p.text-muted.credit
+          | Example courtesy 
+          a(href='http://martinbean.co.uk') Martin Bean 
+          | and 
+          a(href='http://ryanfait.com/sticky-footer/') Ryan Fait
+          | .
+    //
+       Bootstrap core JavaScript
+    //================================================== 
+    // Placed at the end of the document so the pages load faster
+    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')

@@ -1,4 +1,4 @@
-!!! 5
+doctype 5
 html(lang='en')
 head
     meta(charset='utf-8')
@@ -8,18 +8,21 @@ head
         meta(name='copyright', content='Copyright (c) 2013 ALT-F1, We believe in the projects we work on™')
         link(rel='shortcut icon', href='/bootstrap-3.0.0/assets/ico/favicon.png')
         title Starter Template for Bootstrap
-//
+    //
        Bootstrap core CSS
     link(href='/bootstrap-3.0.0/dist/css/bootstrap.css', rel='stylesheet')
-//
+    //
        Custom styles for this template
     link(href='/bootstrap-3.0.0/examples/starter-template/starter-template.css', rel='stylesheet')
-//
+    //
        HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
-//if lt IE 9
-  script(src='/bootstrap-3.0.0/assets/js/html5shiv.js')
-  script(src='/bootstrap-3.0.0/assets/js/respond.min.js')
+    //if lt IE 9
+      script(src='/bootstrap-3.0.0/assets/js/html5shiv.js')
+      script(src='/bootstrap-3.0.0/assets/js/respond.min.js')
 body
+    a(href='https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt')
+        img(style='position: absolute; top: 20; right: 0; border: 0;', src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png', alt='Fork me on GitHub')
+
     .navbar.navbar-inverse.navbar-fixed-top
         .container
             .navbar-header
@@ -38,15 +41,15 @@ body
                         a(href='/contact') Contact ALT-F1
 //
           /.nav-collapse
-.container
-    .starter-template
-        h1 Bootstrap 3 rendered by Jade, Node, Express and Grunt
-        p.lead
-            | test each of the&nbsp;
-            a(href='http://bit.ly/181yG5r') Bootstrap 3 version of the sample templates&nbsp;
-            | by clicking on the links below
-    .bs-example
-        block body
+    .container
+        .starter-template
+            h1 Bootstrap 3 rendered by Jade, Node, Express and Grunt
+            p.lead
+                | test each of the&nbsp;
+                a(href='http://bit.ly/181yG5r') Bootstrap 3 version of the sample templates&nbsp;
+                | by clicking on the links below
+        .bs-example
+            block body
 //
        /.container
 //

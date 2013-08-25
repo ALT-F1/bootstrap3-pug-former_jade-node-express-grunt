@@ -1,0 +1,127 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    title Off Canvas Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/offcanvas.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='#{pathToAssets}/assets/js/html5shiv.js')
+      script(src='#{pathToAssets}/assets/js/respond.min.js')
+  body
+    .navbar.navbar-fixed-top.navbar-inverse(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Project name
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+        // /.nav-collapse
+      // /.container
+    // /.navbar
+    .container
+      .row.row-offcanvas.row-offcanvas-right
+        .col-xs-12.col-sm-9
+          p.pull-right.visible-xs
+            button.btn.btn-primary.btn-xs(type='button', data-toggle='offcanvas') Toggle nav
+          .jumbotron
+            h1 Hello, world!
+            p
+              | This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.
+          .row
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+            .col-6.col-sm-6.col-lg-4
+              h2 Heading
+              p
+                | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+              p
+                a.btn.btn-default(href='#') View details »
+            // /span
+          // /row
+        // /span
+        #sidebar.col-xs-6.col-sm-3.sidebar-offcanvas(role='navigation')
+          .well.sidebar-nav
+            ul.nav
+              li Sidebar
+              li.active
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li Sidebar
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li Sidebar
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+          // /.well
+        // /span
+      // /row
+      hr
+      footer
+        p &copy; Company 2013
+    // /.container
+    //
+       Bootstrap core JavaScript
+    // ================================================== 
+    // Placed at the end of the document so the pages load faster
+    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
+    script(src='#{pathToSelectedTemplateWithinBootstrap}/offcanvas.js')
