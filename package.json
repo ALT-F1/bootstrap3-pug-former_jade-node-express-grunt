@@ -31,7 +31,7 @@
         "matchdep": "~0.1.2"
     },
     "_commentdependencies": {
-        "jade": "~0.34.1",
+        "jade": "~1.0.2",
         "mongoose": "~3.6.16",
         "request": "~2.26.0",
         "async": "~0.2.9"
