@@ -7,18 +7,64 @@ bootstrap3-jade-node
 
 + Do you want to accelerate the bootstrapping of your web applications?
 
-## Getting Started
+
+
+## Install dependencies
+
++ install [NodeJS] (globally)
++ install [NPM] (globally)
++ install [Grunt] (globally)
+
+
+## Download the code without Git
+
+kudos to [onlinemad], he wrote a script downloading the code and generating a package.json file
+
+The following script will
+
+1. create a directory named "bootstrap3-jade-node-express-grunt"
+2. create a file named “init.js" containing this script [https://gist.github.com/onlinemad/6373852]
+3. install the depedencies: adm-zip, request, prompt and js-beautify
+4.
+
+> `mkdir bootstrap3-jade-node-express-grunt`
+>
+> `curl https://gist.github.com/onlinemad/6373852/raw/8439cc03c69cd171dc95a72874130b7f6a2e7c34/init.js > init2.js`
+>
+> `npm install adm-zip`
+>
+> `npm install request`
+>
+> `npm install prompt`
+>
+> `npm install js-beautify`
+>
+> `node init.js`
+
++ hit Enter on your keyboard :-)
+
++ Fill the project information: Project name, description, version number (N.N.N), Author, Reposition (url),
+    + the project name will be the directory used to store the [bootstrap3-jade-node-express-grunt] source code
+
++ wait a few seconds, the download occus in background and you don't have any visual feedback
+
++ go to "How to run the app"
+
+## Download the code using Git
 
 + git clone https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt.git
 + `cd bootstrap3-jade-node-express-grunt`
-+ install [NodeJS] (globally)
-+ install [Grunt] (globally)
-+ Install the module with: `npm install` (locally, a node_modules directory will be created)
-+ Start the server with: `Grunt`
+
+## How to run the app
+
++ Install the module using `npm install` command (locally, a node_modules directory will be created)
++ Start the server using the `grunt` command
++ open [http://localhost:3001/](http://localhost:3001/) home page
+
 
 ## Documentation
 
-+ start the server
++ start the server using `grunt`
 + click on the links leading you to the [Twitter Bootstrap] templates translated into Jade
 + Use the *.jade files into your projects !
 
@@ -28,13 +74,12 @@ bootstrap3-jade-node
     + replace inside the jade file the path to the JS and CSS files from [Bootstrap Twitter]:  `../..` with the parameter `#{pathToAssets}`
     + change the link to the custom made CSS made for each template stored under the `bootstrap-3.0.0/examples/` directory :  `#{pathToSelectedTemplateWithinBootstrap}`
 
-## Examples
+## Examples, how to open a bootstrap page
 
 + open [http://localhost:3001/](http://localhost:3001/)
 + open the [Starter template](http://localhost:3001/template/starter-template)
 
-## Contributing
-Feel free to help me convert all the templates:
+## Available templates
 
 - [X] [carousel](http://twbs.github.io/bootstrap/examples/carousel/)
 - [X] [grid](http://twbs.github.io/bootstrap/examples/grid/)
@@ -57,6 +102,14 @@ Feel free to help me convert all the templates:
 TODOs
 
 + add front end test against html pages
+
+v2014-01-07
+
++ Add script written by [onlinemad] - a simple script to init a project based on bootstrap3-jade-node-express-grunt: [https://gist.github.com/onlinemad/6373852]
++ [Petr Volny] has [made two changes](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/2):
+    + Jade npm module update
+    + Fix deprecated jade doctype 5
+
 
 v2013-08-25
 
@@ -95,10 +148,10 @@ Copyright (c) 2013 ALT-F1, We believe in the projects we work on™
 Licensed under the MIT license.
 
 
-
-[Bootstrap 3 samples]: http://twbs.github.io/bootstrap/getting-started/#examples
+[https://gist.github.com/onlinemad/6373852]: https://gist.github.com/onlinemad/6373852
 [ALT-F1]: http://www.alt-f1.be
 [AngularJS]: http://angularjs.org/
+[Bootstrap 3 samples]: http://twbs.github.io/bootstrap/getting-started/#examples
 [Connect]: http://www.senchalabs.org/connect/
 [Express]: http://expressjs.com/
 [Font Awesome]: http://fortawesome.github.io/Font-Awesome/
@@ -124,6 +177,8 @@ Licensed under the MIT license.
 [Node inspector]: https://github.com/node-inspector/node-inspector
 [NodeJS]: http://nodejs.org/
 [NPM]: http://npmjs.org/
+[onlinemad]: https://github.com/onlinemad
+[Petr Volny]: https://github.com/petrvolny
 [Professional Node JS book]: http://astore.amazon.fr/i14ynet-21/detail/1118185463
 [Professional Node JS Source Code]: https://github.com/ALT-F1/nodejs-professional
 [Python]: http://www.python.org
