@@ -46,9 +46,9 @@ The following script will
 + Fill the project information: Project name, description, version number (N.N.N), Author, Reposition (url),
     + the project name will be the directory used to store the [bootstrap3-jade-node-express-grunt] source code
 
-+ wait a few seconds, the download occus in background and you don't have any visual feedback
++ wait a few seconds, the download occurs in background and you don't have any visual feedback
 
-+ go to "How to run the app"
++ go to "How to run the app" chapter (hereafter)
 
 ## Download the code using Git
 
