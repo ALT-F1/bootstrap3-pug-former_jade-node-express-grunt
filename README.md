@@ -25,11 +25,13 @@ The following script will
 1. create a directory named "bootstrap3-jade-node-express-grunt"
 2. create a file named “init.js" containing this script [https://gist.github.com/onlinemad/6373852]
 3. install the depedencies: adm-zip, request, prompt and js-beautify
-4.
+4. run the following commands
 
 > `mkdir bootstrap3-jade-node-express-grunt`
+> 
+> `cd bootstrap3-jade-node-express-grunt`
 >
-> `curl https://gist.github.com/onlinemad/6373852/raw/8439cc03c69cd171dc95a72874130b7f6a2e7c34/init.js > init2.js`
+> `curl https://gist.github.com/onlinemad/6373852/raw/8439cc03c69cd171dc95a72874130b7f6a2e7c34/init.js > init.js`
 >
 > `npm install adm-zip`
 >
@@ -41,14 +43,14 @@ The following script will
 >
 > `node init.js`
 
-+ hit Enter on your keyboard :-)
+5. hit Enter on your keyboard :-)
 
-+ Fill the project information: Project name, description, version number (N.N.N), Author, Reposition (url),
+6. Fill the project information: Project name, description, version number (N.N.N), Author, Reposition (url),
     + the project name will be the directory used to store the [bootstrap3-jade-node-express-grunt] source code
 
-+ wait a few seconds, the download occurs in background and you don't have any visual feedback
+7. wait a few seconds, the download occurs in background and you don't have any visual feedback
 
-+ go to "How to run the app" chapter (hereafter)
+8. go to "How to run the app" chapter (hereafter)
 
 ## Download the code using Git
 
@@ -102,6 +104,10 @@ The following script will
 TODOs
 
 + add front end test against html pages
+
+v2014-01-08
+
++ Correct the chapter "Download the code without Git"
 
 v2014-01-07
 
