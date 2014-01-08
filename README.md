@@ -3,11 +3,11 @@ bootstrap3-jade-node
 
 [Bootstrap 3 samples] rendered using [Jade], [NodeJS], [Express] and [Grunt]
 
-# bootstrap3-jade-node
+# bootstrap3-jade-node-express-grunt
 
 + Do you want to accelerate the bootstrapping of your web applications?
 
-
++ Test it now https://bootstrap3-jade-node-express-grunt.azurewebsites.net/
 
 ## Install dependencies
 
