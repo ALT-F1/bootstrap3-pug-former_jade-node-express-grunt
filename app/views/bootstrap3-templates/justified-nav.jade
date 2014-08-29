@@ -1,23 +1,27 @@
-doctype 5
+doctype html
 html(lang='en')
-head
+  head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
     title Justified Nav Template for Bootstrap
-    //
-       Bootstrap core CSS 
-    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
-    //
-       Custom styles for this template 
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
     link(href='#{pathToSelectedTemplateWithinBootstrap}/justified-nav.css', rel='stylesheet')
-    //
-       HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    // Just for debugging purposes. Don't actually copy these 2 lines!
     //if lt IE 9
-      script(src='#{pathToAssets}/assets/js/html5shiv.js')
-      script(src='#{pathToAssets}/assets/js/respond.min.js')
+      script(src='#{pathToAssets}/docs/assets/js/ie8-responsive-file-warning.js')
+    script(src='#{pathToAssets}/docs/assets/js/ie-emulation-modes-warning.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='#{pathToAssets}/docs/assets/js/ie10-viewport-bug-workaround.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   body
     .container
       .masthead
@@ -35,43 +39,40 @@ head
             a(href='#') About
           li
             a(href='#') Contact
-      //
-         Jumbotron 
+      // Jumbotron
       .jumbotron
         h1 Marketing stuff!
         p.lead
           | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
         p
-          a.btn.btn-lg.btn-success(href='#') Get started today
-      //
-         Example row of columns 
+          a.btn.btn-lg.btn-success(href='#', role='button') Get started today
+      // Example row of columns
       .row
         .col-lg-4
-          h2 Heading
+          h2 Safari bug warning!
+          p.text-danger
+            | As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.
           p
             | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
           p
-            a.btn.btn-primary(href='#') View details »
+            a.btn.btn-primary(href='#', role='button') View details &raquo;
         .col-lg-4
           h2 Heading
           p
             | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
           p
-            a.btn.btn-primary(href='#') View details »
+            a.btn.btn-primary(href='#', role='button') View details &raquo;
         .col-lg-4
           h2 Heading
           p
             | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
           p
-            a.btn.btn-primary(href='#') View details »
-      //
-         Site footer 
+            a.btn.btn-primary(href='#', role='button') View details &raquo;
+      // Site footer
       .footer
-        p &copy; Company 2013
-    //
-       /container 
-    //
-       Bootstrap core JavaScript
+        p &copy; Company 2014
+    // /container
+    
+    // Bootstrap core JavaScript
     // ==================================================
-    //
-       Placed at the end of the document so the pages load faster 
+    // Placed at the end of the document so the pages load faster

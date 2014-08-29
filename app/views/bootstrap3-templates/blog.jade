@@ -1,0 +1,194 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
+    title Blog Template for Bootstrap
+    // Bootstrap core CSS
+    link(href='#{pathToAssets}/dist/css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='#{pathToSelectedTemplateWithinBootstrap}/blog.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy these 2 lines!
+    //if lt IE 9
+      script(src='#{pathToAssets}/docs/assets/js/ie8-responsive-file-warning.js')
+    script(src='#{pathToAssets}/docs/assets/js/ie-emulation-modes-warning.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='#{pathToAssets}/docs/assets/js/ie10-viewport-bug-workaround.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .blog-masthead
+      .container
+        nav.blog-nav
+          a.blog-nav-item.active(href='#') Home
+          a.blog-nav-item(href='#') New features
+          a.blog-nav-item(href='#') Press
+          a.blog-nav-item(href='#') New hires
+          a.blog-nav-item(href='#') About
+    .container
+      .blog-header
+        h1.blog-title The Bootstrap Blog
+        p.lead.blog-description The official example template of creating a blog with Bootstrap.
+      .row
+        .col-sm-8.blog-main
+          .blog-post
+            h2.blog-post-title Sample blog post
+            p.blog-post-meta
+              | January 1, 2014 by 
+              a(href='#') Mark
+            p
+              | This blog post shows a few different types of content that&apos;s supported and styled with Bootstrap. Basic typography, images, and code are all supported.
+            hr
+            p
+              | Cum sociis natoque penatibus et magnis 
+              a(href='#') dis parturient montes
+              | , nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+            blockquote
+              p
+                | Curabitur blandit tempus porttitor. 
+                strong Nullam quis risus eget urna mollis
+                |  ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              | Etiam porta 
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            h2 Heading
+            p
+              | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            h3 Sub-heading
+            p
+              | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            pre.
+              
+            p
+              | Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+            h3 Sub-heading
+            p
+              | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            ul
+              li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              li Donec id elit non mi porta gravida at eget metus.
+              li Nulla vitae elit libero, a pharetra augue.
+            p
+              | Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+            ol
+              li Vestibulum id ligula porta felis euismod semper.
+              li
+                | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              li Maecenas sed diam eget risus varius blandit sit amet non magna.
+            p
+              | Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+          // /.blog-post
+          .blog-post
+            h2.blog-post-title Another blog post
+            p.blog-post-meta
+              | December 23, 2013 by 
+              a(href='#') Jacob
+            p
+              | Cum sociis natoque penatibus et magnis 
+              a(href='#') dis parturient montes
+              | , nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+            blockquote
+              p
+                | Curabitur blandit tempus porttitor. 
+                strong Nullam quis risus eget urna mollis
+                |  ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              | Etiam porta 
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            p
+              | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          // /.blog-post
+          .blog-post
+            h2.blog-post-title New feature
+            p.blog-post-meta
+              | December 14, 2013 by 
+              a(href='#') Chris
+            p
+              | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            ul
+              li Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+              li Donec id elit non mi porta gravida at eget metus.
+              li Nulla vitae elit libero, a pharetra augue.
+            p
+              | Etiam porta 
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+            p
+              | Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+          // /.blog-post
+          ul.pager
+            li
+              a(href='#') Previous
+            li
+              a(href='#') Next
+        // /.blog-main
+        .col-sm-3.col-sm-offset-1.blog-sidebar
+          .sidebar-module.sidebar-module-inset
+            h4 About
+            p
+              | Etiam porta 
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+          .sidebar-module
+            h4 Archives
+            ol.list-unstyled
+              li
+                a(href='#') March 2014
+              li
+                a(href='#') February 2014
+              li
+                a(href='#') January 2014
+              li
+                a(href='#') December 2013
+              li
+                a(href='#') November 2013
+              li
+                a(href='#') October 2013
+              li
+                a(href='#') September 2013
+              li
+                a(href='#') August 2013
+              li
+                a(href='#') July 2013
+              li
+                a(href='#') June 2013
+              li
+                a(href='#') May 2013
+              li
+                a(href='#') April 2013
+          .sidebar-module
+            h4 Elsewhere
+            ol.list-unstyled
+              li
+                a(href='#') GitHub
+              li
+                a(href='#') Twitter
+              li
+                a(href='#') Facebook
+        // /.blog-sidebar
+      // /.row
+    // /.container
+    .blog-footer
+      p
+        | Blog template built for 
+        a(href='http://getbootstrap.com') Bootstrap
+        |  by 
+        a(href='https://twitter.com/mdo') @mdo
+        | .
+      p
+        a(href='#') Back to top
+    
+    // Bootstrap core JavaScript
+    // ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
+    script(src='#{pathToAssets}/docs/assets/js/_vendor/holder.js')

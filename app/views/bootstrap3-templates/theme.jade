@@ -1,28 +1,36 @@
-doctype 5
+doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    link(rel='shortcut icon', href='#{pathToAssets}/assets/ico/favicon.png')
+    link(rel='icon', href='#{pathToAssets}/docs/favicon.ico')
     title Theme Template for Bootstrap
     // Bootstrap core CSS
-    link(href='#{pathToAssets}/dist/css/bootstrap.css', rel='stylesheet')
+    link(href='#{pathToAssets}/dist/css/bootstrap.min.css', rel='stylesheet')
     // Bootstrap theme
     link(href='#{pathToAssets}/dist/css/bootstrap-theme.min.css', rel='stylesheet')
     // Custom styles for this template
     link(href='#{pathToSelectedTemplateWithinBootstrap}/theme.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy these 2 lines!
+    //if lt IE 9
+      script(src='#{pathToAssets}/docs/assets/js/ie8-responsive-file-warning.js')
+    script(src='#{pathToAssets}/docs/assets/js/ie-emulation-modes-warning.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='#{pathToAssets}/docs/assets/js/ie10-viewport-bug-workaround.js')
     // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     //if lt IE 9
-      script(src='#{pathToAssets}/assets/js/html5shiv.js')
-      script(src='#{pathToAssets}/assets/js/respond.min.js')
-  body
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body(role='document')
     // Fixed navbar
-    .navbar.navbar-inverse.navbar-fixed-top
+    .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
       .container
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
@@ -37,9 +45,9 @@ html(lang='en')
               a(href='#contact') Contact
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown')
-                | Dropdown
-                b.caret
-              ul.dropdown-menu
+                | Dropdown 
+                span.caret
+              ul.dropdown-menu(role='menu')
                 li
                   a(href='#') Action
                 li
@@ -53,14 +61,14 @@ html(lang='en')
                 li
                   a(href='#') One more separated link
         // /.nav-collapse
-    .container.theme-showcase
+    .container.theme-showcase(role='main')
       // Main jumbotron for a primary marketing message or call to action
       .jumbotron
         h1 Hello, world!
         p
-          | This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+          | This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
         p
-          a.btn.btn-primary.btn-lg Learn more »
+          a.btn.btn-primary.btn-lg(href='#', role='button') Learn more &raquo;
       .page-header
         h1 Buttons
       p
@@ -96,16 +104,186 @@ html(lang='en')
         button.btn.btn-xs.btn-danger(type='button') Danger
         button.btn.btn-xs.btn-link(type='button') Link
       .page-header
+        h1 Tables
+      .row
+        .col-md-6
+          table.table
+            thead
+              tr
+                th #
+                th First Name
+                th Last Name
+                th Username
+            tbody
+              tr
+                td 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                td 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                td 3
+                td Larry
+                td the Bird
+                td @twitter
+        .col-md-6
+          table.table.table-striped
+            thead
+              tr
+                th #
+                th First Name
+                th Last Name
+                th Username
+            tbody
+              tr
+                td 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                td 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                td 3
+                td Larry
+                td the Bird
+                td @twitter
+      .row
+        .col-md-6
+          table.table.table-bordered
+            thead
+              tr
+                th #
+                th First Name
+                th Last Name
+                th Username
+            tbody
+              tr
+                td(rowspan='2') 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                td Mark
+                td Otto
+                td @TwBootstrap
+              tr
+                td 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                td 3
+                td(colspan='2') Larry the Bird
+                td @twitter
+        .col-md-6
+          table.table.table-condensed
+            thead
+              tr
+                th #
+                th First Name
+                th Last Name
+                th Username
+            tbody
+              tr
+                td 1
+                td Mark
+                td Otto
+                td @mdo
+              tr
+                td 2
+                td Jacob
+                td Thornton
+                td @fat
+              tr
+                td 3
+                td(colspan='2') Larry the Bird
+                td @twitter
+      .page-header
         h1 Thumbnails
-      img.img-thumbnail(data-src='holder.js/200x200', src='data:image/png;base64,', alt='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera')
+      img.img-thumbnail(data-src='holder.js/200x200', alt='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera')
+      .page-header
+        h1 Labels
+      h1
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      h2
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      h3
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      h4
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      h5
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      h6
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      p
+        span.label.label-default Default
+        span.label.label-primary Primary
+        span.label.label-success Success
+        span.label.label-info Info
+        span.label.label-warning Warning
+        span.label.label-danger Danger
+      .page-header
+        h1 Badges
+      p
+        a(href='#')
+          | Inbox 
+          span.badge 42
+      ul.nav.nav-pills
+        li.active
+          a(href='#')
+            | Home 
+            span.badge 42
+        li
+          a(href='#') Profile
+        li
+          a(href='#')
+            | Messages 
+            span.badge 3
       .page-header
         h1 Dropdown menus
       .dropdown.theme-dropdown.clearfix
         a#dropdownMenu1.sr-only.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
-          | Dropdown
-          b.caret
+          | Dropdown 
+          span.caret
         ul.dropdown-menu(role='menu', aria-labelledby='dropdownMenu1')
-          li(role='presentation')
+          li.active(role='presentation')
             a(role='menuitem', tabindex='-1', href='#') Action
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#') Another action
@@ -115,11 +293,28 @@ html(lang='en')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#') Separated link
       .page-header
+        h1 Navs
+      ul.nav.nav-tabs(role='tablist')
+        li.active
+          a(href='#') Home
+        li
+          a(href='#') Profile
+        li
+          a(href='#') Messages
+      ul.nav.nav-pills
+        li.active
+          a(href='#') Home
+        li
+          a(href='#') Profile
+        li
+          a(href='#') Messages
+      .page-header
         h1 Navbars
       .navbar.navbar-default
         .container
           .navbar-header
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
               span.icon-bar
               span.icon-bar
               span.icon-bar
@@ -134,9 +329,9 @@ html(lang='en')
                 a(href='#contact') Contact
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Dropdown
-                  b.caret
-                ul.dropdown-menu
+                  | Dropdown 
+                  span.caret
+                ul.dropdown-menu(role='menu')
                   li
                     a(href='#') Action
                   li
@@ -149,18 +344,12 @@ html(lang='en')
                     a(href='#') Separated link
                   li
                     a(href='#') One more separated link
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='/template/navbar') Default
-              li
-                a(href='/template/navbar-static-top') Static top
-              li.active
-                a(href='') Fixed top
           // /.nav-collapse
       .navbar.navbar-inverse
         .container
           .navbar-header
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.sr-only Toggle navigation
               span.icon-bar
               span.icon-bar
               span.icon-bar
@@ -175,9 +364,9 @@ html(lang='en')
                 a(href='#contact') Contact
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Dropdown
-                  b.caret
-                ul.dropdown-menu
+                  | Dropdown 
+                  span.caret
+                ul.dropdown-menu(role='menu')
                   li
                     a(href='#') Action
                   li
@@ -190,51 +379,47 @@ html(lang='en')
                     a(href='#') Separated link
                   li
                     a(href='#') One more separated link
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href='/template/navbar') Default
-              li
-                a(href='/template/navbar-static-top') Static top
-              li.active
-                a(href='') Fixed top
           // /.nav-collapse
       .page-header
         h1 Alerts
-      .alert.alert-success
-        strong Well done!&nbsp;
-        | You successfully read this important alert message.
-      .alert.alert-info
-        strong Heads up!&nbsp;
-        | This alert needs your attention, but it's not super important.
-      .alert.alert-warning
-        strong Warning!&nbsp;
-        | Best check yo self, you're not looking too good.
-      .alert.alert-danger
-        strong Oh snap!&nbsp;
-        | Change a few things up and try submitting again.
+      .alert.alert-success(role='alert')
+        strong Well done!
+        |  You successfully read this important alert message.
+      .alert.alert-info(role='alert')
+        strong Heads up!
+        |  This alert needs your attention, but it&apos;s not super important.
+      .alert.alert-warning(role='alert')
+        strong Warning!
+        |  Best check yo self, you&apos;re not looking too good.
+      .alert.alert-danger(role='alert')
+        strong Oh snap!
+        |  Change a few things up and try submitting again.
       .page-header
         h1 Progress bars
       .progress
         .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
           span.sr-only 60% Complete
       .progress
-        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%;')
+        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
           span.sr-only 40% Complete (success)
       .progress
-        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%;')
+        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
           span.sr-only 20% Complete
       .progress
-        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
           span.sr-only 60% Complete (warning)
       .progress
-        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%;')
+        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
           span.sr-only 80% Complete (danger)
       .progress
-        .progress-bar.progress-bar-success(style='width: 35%;')
+        .progress-bar.progress-bar-striped(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+          span.sr-only 100% Complete
+      .progress
+        .progress-bar.progress-bar-success(style='width: 35%')
           span.sr-only 35% Complete (success)
-        .progress-bar.progress-bar-warning(style='width: 20%;')
+        .progress-bar.progress-bar-warning(style='width: 20%')
           span.sr-only 20% Complete (warning)
-        .progress-bar.progress-bar-danger(style='width: 10%;')
+        .progress-bar.progress-bar-danger(style='width: 10%')
           span.sr-only 10% Complete (danger)
       .page-header
         h1 List groups
@@ -315,11 +500,29 @@ html(lang='en')
       .well
         p
           | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+      .page-header
+        h1 Carousel
+      #carousel-example-generic.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carousel-example-generic', data-slide-to='0')
+          li(data-target='#carousel-example-generic', data-slide-to='1')
+          li(data-target='#carousel-example-generic', data-slide-to='2')
+        .carousel-inner
+          .item.active
+            img(data-src='holder.js/1140x500/auto/#777:#555/text:First slide', alt='First slide')
+          .item
+            img(data-src='holder.js/1140x500/auto/#666:#444/text:Second slide', alt='Second slide')
+          .item
+            img(data-src='holder.js/1140x500/auto/#555:#333/text:Third slide', alt='Third slide')
+        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left
+        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right
     // /container
-    //
-       Bootstrap core JavaScript
-    //================================================== 
+    
+    // Bootstrap core JavaScript
+    // ==================================================
     // Placed at the end of the document so the pages load faster
-    script(src='#{pathToAssets}/assets/js/jquery.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src='#{pathToAssets}/dist/js/bootstrap.min.js')
-    script(src='#{pathToAssets}/assets/js/holder.js')
+    script(src='#{pathToAssets}/docs/assets/js/_vendor/holder.js')
