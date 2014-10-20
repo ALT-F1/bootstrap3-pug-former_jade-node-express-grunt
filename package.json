@@ -40,7 +40,7 @@
         "nodejs",
         "Express",
         "Jade",
-        "Bootstrap 3"
+        "Bootstrap 3.2.0"
     ],
     "devDependencies": {
         "grunt-contrib-clean": "~0.5.0",

@@ -67,7 +67,7 @@ The following script will
 ## Documentation
 
 + start the server using `grunt`
-+ click on the links leading you to the [Twitter Bootstrap] templates translated into Jade
++ click on the links leading you to the [Bootstrap] templates translated into Jade
 + Use the *.jade files into your projects !
 
 + how did we convert the html into jade
@@ -81,30 +81,37 @@ The following script will
 + open [http://localhost:3001/](http://localhost:3001/)
 + open the [Starter template](http://localhost:3001/template/starter-template)
 
-## Available templates
+## Available templates (sorted)
 
+- [X] [blog](http://getbootstrap.com/examples/blog/)
 - [X] [carousel](http://twbs.github.io/bootstrap/examples/carousel/)
+- [X] [cover](http://getbootstrap.com/examples/cover/)
+- [X] [dashboard](http://getbootstrap.com/examples/dashboard/)
 - [X] [grid](http://twbs.github.io/bootstrap/examples/grid/)
-- [X] [jumbotron](http://twbs.github.io/bootstrap/examples/jumbotron/)
 - [X] [jumbotron-narrow](http://twbs.github.io/bootstrap/examples/jumbotron-narrow/)
+- [X] [jumbotron](http://twbs.github.io/bootstrap/examples/jumbotron/)
 - [X] [justified-nav](http://twbs.github.io/bootstrap/examples/justified-nav/)
-- [X] [navbar](http://twbs.github.io/bootstrap/examples/navbar/)
 - [X] [navbar-fixed-top](http://twbs.github.io/bootstrap/examples/navbar-fixed-top/)
 - [X] [navbar-static-top](http://twbs.github.io/bootstrap/examples/navbar-static-top/)
+- [X] [navbar](http://twbs.github.io/bootstrap/examples/navbar/)
 - [X] [non-responsive](http://twbs.github.io/bootstrap/examples/non-responsive/)
 - [X] [offcanvas](http://twbs.github.io/bootstrap/examples/offcanvas/)
 - [X] [signin](http://twbs.github.io/bootstrap/examples/signin/)
 - [X] [starter-template](http://twbs.github.io/bootstrap/examples/starter-template/)
-- [X] [sticky-footer](http://twbs.github.io/bootstrap/examples/sticky-footer/)
 - [X] [sticky-footer-navbar](http://twbs.github.io/bootstrap/examples/sticky-footer-navbar/)
+- [X] [sticky-footer](http://twbs.github.io/bootstrap/examples/sticky-footer/)
 - [X] [theme](http://twbs.github.io/bootstrap/examples/theme/)
+
 
 ## Release History
 
-TODOs
+v2014-10-20
 
-+ add front end test against html pages
-
++ [Simon] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/4) from [Bootstrap] 3.0.0 to [Bootstrap] 3.2.0  
+    + Add Cover template
+    + Add Blog template
+    + Add Dashboard template
+    
 v2014-01-08
 
 + Correct the chapter "Download the code without Git"
@@ -145,7 +152,7 @@ v2013-08-22
 
 v2013-08-21
 
-- [Twitter Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
+- [Bootstrap] 3 is just released, it is time to convert HTML into Jade templates
 + Convert [starter-template.html](http://twbs.github.io/bootstrap/examples/starter-template/) template into [starter-template.jade](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/tree/master/app/views/bootstrap3-templates)
 
 ## License
@@ -154,10 +161,11 @@ Copyright (c) 2013 ALT-F1, We believe in the projects we work on™
 Licensed under the MIT license.
 
 
-[https://gist.github.com/onlinemad/6373852]: https://gist.github.com/onlinemad/6373852
 [ALT-F1]: http://www.alt-f1.be
 [AngularJS]: http://angularjs.org/
 [Bootstrap 3 samples]: http://twbs.github.io/bootstrap/getting-started/#examples
+[Bootstrap for Compass]: https://github.com/vwall/compass-twitter-bootstrap
+[Bootstrap]: http://getbootstrap.com/
 [Connect]: http://www.senchalabs.org/connect/
 [Express]: http://expressjs.com/
 [Font Awesome]: http://fortawesome.github.io/Font-Awesome/
@@ -168,6 +176,7 @@ Licensed under the MIT license.
 [Grunt-nodemon]: https://github.com/remy/nodemon
 [Grunt]: http://gruntjs.com/
 [html2jade]: https://github.com/donpark/html2jade
+[https://gist.github.com/onlinemad/6373852]: https://gist.github.com/onlinemad/6373852
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [Jade]: http://jade-lang.com/
 [Jasmine]: http://pivotal.github.io/jasmine/
@@ -188,10 +197,7 @@ Licensed under the MIT license.
 [Professional Node JS book]: http://astore.amazon.fr/i14ynet-21/detail/1118185463
 [Professional Node JS Source Code]: https://github.com/ALT-F1/nodejs-professional
 [Python]: http://www.python.org
-[SIMOGGA COMPUTE WEB source code]: https://bitbucket.org/amiasystems/simogga-compute-web
-[SIMOGGA CORE source code]: https://bitbucket.org/amiaconsulting/simogga-core
+[Simon]: https://github.com/simonjmartin
 [Spacelab stylesheet]: http://bootswatch.com/2/spacelab/
-[Twitter Bootstrap for Compass]: https://github.com/vwall/compass-twitter-bootstrap
-[Twitter Bootstrap]: http://getbootstrap.com/
 [Ubuntu]: http://www.ubuntu.com/
 [Yeoman]: http://yeoman.io/
