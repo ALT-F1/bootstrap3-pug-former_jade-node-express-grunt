@@ -107,11 +107,12 @@ The following script will
 
 v2014-10-20
 
-+ [Simon] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/4) from [Bootstrap] 3.0.0 to [Bootstrap] 3.2.0  
++ [Matan Eine] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/4) from [Bootstrap] 3.0.0 to [Bootstrap] 3.2.0
     + Add Cover template
     + Add Blog template
     + Add Dashboard template
-    
++ [Simon] has found that [the html code was broken](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/issues/3) in the [Bootstrap] 3.0.0
+
 v2014-01-08
 
 + Correct the chapter "Download the code without Git"
@@ -183,6 +184,7 @@ Licensed under the MIT license.
 [Javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [Karma]: http://karma-runner.github.io/
 [log4js]: https://github.com/nomiddlename/log4js-node
+[Matan Eine]: https://github.com/mataneine
 [matchdep]: https://npmjs.org/package/matchdep
 [Mocha]: http://visionmedia.github.io/mocha/
 [MongoDB]: http://www.mongodb.org/
