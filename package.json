@@ -10,7 +10,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ALT-F1/bootstrap3-jade-node-.git"
+        "url": "https://github.com/kobieisen/bootstrap3-html-jade-node-express-grunt.git"
+
     },
     "bugs": {
         "url": "https://github.com/ALT-F1/bootstrap3-jade-node-/issues?status=new&status=open"

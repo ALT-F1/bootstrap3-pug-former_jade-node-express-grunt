@@ -23,8 +23,8 @@ module.exports = function (app) {
     });
     app.get('/template/:selectedTemplate', function (req, res) {
         res.render('bootstrap3-templates/' + req.params.selectedTemplate, {
-            'pathToAssets': '/bootstrap-3.2.0',
-            'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.2.0/docs/examples/' + req.params.selectedTemplate
+            'pathToAssets': '/bootstrap-3.3.1',
+            'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.3.1/docs/examples/' + req.params.selectedTemplate
         });
     });
 };
