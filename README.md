@@ -105,6 +105,11 @@ The following script will
 
 ## Release History
 
+v2014-11-13
+
++ [Kobi Eisenberg] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/5) from [Bootstrap] 3.2.0 to 3.3.1
+
+ 
 v2014-10-20
 
 + [Matan Eine] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/4) from [Bootstrap] 3.0.0 to [Bootstrap] 3.2.0
