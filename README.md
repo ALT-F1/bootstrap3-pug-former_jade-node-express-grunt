@@ -107,7 +107,7 @@ The following script will
 
 v2014-11-13
 
-+ [kobieisen] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/5) from [Bootstrap] 3.2.0 to 3.3.1
++ [Kobi Eisenberg] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/5) from [Bootstrap] 3.2.0 to 3.3.1
 
  
 v2014-10-20
@@ -208,3 +208,4 @@ Licensed under the MIT license.
 [Spacelab stylesheet]: http://bootswatch.com/2/spacelab/
 [Ubuntu]: http://www.ubuntu.com/
 [Yeoman]: http://yeoman.io/
+[Kobi Eisenberg]: https://github.com/kobieisen
