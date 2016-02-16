@@ -213,4 +213,4 @@ Licensed under the MIT license.
 [Ubuntu]: http://www.ubuntu.com/
 [Yeoman]: http://yeoman.io/
 [Kobi Eisenberg]: https://github.com/kobieisen
-[Josg Crunkelton]: https://github.com/Crunkelton
+[Josh Crunkelton]: https://github.com/Crunkelton
