@@ -28,9 +28,10 @@ html(lang='en')
         h2.form-signin-heading Please sign in
         input.form-control(type='email', placeholder='Email address', required='', autofocus='')
         input.form-control(type='password', placeholder='Password', required='')
-        label.checkbox
-          input(type='checkbox', value='remember-me')
-          |  Remember me
+        .checkbox
+            label
+                input(type='checkbox', value='remember-me')
+                |  Remember me
         button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
     // /container
     
