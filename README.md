@@ -107,7 +107,8 @@ The following script will
 
 v2016-02-16
 
-    + [Josh Crunkelton] has [aligned the check box on the sign in page](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/7)
++ [Josh Crunkelton] has [aligned the check box on the sign in page](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/7)
+
 v2014-11-13
 
 + [Kobi Eisenberg] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/5) from [Bootstrap] 3.2.0 to 3.3.1
