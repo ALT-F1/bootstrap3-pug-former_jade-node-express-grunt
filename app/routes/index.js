@@ -9,22 +9,26 @@
  * GET home page.
  */
 
-'use strict';
+var express = require('express');
 
-module.exports = function (app) {
-    app.get('/', function (req, res) {
-        res.render('index', {});
+module.exports = (function () {
+    'use strict';
+    var router = express.Router();
+
+    router.get('/', function (req, res) {
+        res.render('index');
     });
-    app.get('/about', function (req, res) {
+    router.get('/about', function (req, res) {
         res.redirect('http://www.alt-f1.be');
     });
-    app.get('/contact', function (req, res) {
+    router.get('/contact', function (req, res) {
         res.redirect('http://www.alt-f1.be/contact-us.html');
     });
-    app.get('/template/:selectedTemplate', function (req, res) {
+    router.get('/template/:selectedTemplate', function (req, res) {
         res.render('bootstrap3-templates/' + req.params.selectedTemplate, {
             'pathToAssets': '/bootstrap-3.3.1',
             'pathToSelectedTemplateWithinBootstrap' : '/bootstrap-3.3.1/docs/examples/' + req.params.selectedTemplate
         });
     });
-};
+    return router;
+})();
