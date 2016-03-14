@@ -28,7 +28,7 @@ The following script will
 4. run the following commands
 
 > `mkdir bootstrap3-jade-node-express-grunt`
-> 
+>
 > `cd bootstrap3-jade-node-express-grunt`
 >
 > `curl https://gist.github.com/onlinemad/6373852/raw/8439cc03c69cd171dc95a72874130b7f6a2e7c34/init.js > init.js`
@@ -105,6 +105,10 @@ The following script will
 
 ## Release History
 
+v2016-03-13
+
++ [Agnieszka Gancarczyk] has [migrated from Express 3.2.6 to 4.8.0]
+
 v2016-02-16
 
 + [Josh Crunkelton] has [aligned the check box on the sign in page](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/7)
@@ -113,7 +117,7 @@ v2014-11-13
 
 + [Kobi Eisenberg] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/5) from [Bootstrap] 3.2.0 to 3.3.1
 
- 
+
 v2014-10-20
 
 + [Matan Eine] has [migrated the code](https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/4) from [Bootstrap] 3.0.0 to [Bootstrap] 3.2.0

@@ -25,7 +25,14 @@
         "start": "grunt"
     },
     "dependencies": {
-        "express": "~3.2.6",
+        "express": "~4.8.0",
+        "body-parser": "~1.0.1",
+        "method-override": "2.3.5",
+        "cookie-parser": "1.4.1",
+        "express-session": "1.13.0",
+        "errorhandler": "1.4.3",
+        "serve-favicon": "2.3.0",
+        "morgan": "1.7.0",
         "grunt": "~0.4.1",
         "jade": "~0.34.1",
         "googleapis": "~0.4.3",
