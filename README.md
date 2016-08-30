@@ -1,7 +1,7 @@
 bootstrap3-jade-node
 ====================
 
-[Bootstrap 3 samples] rendered using [Jade], [NodeJS], [Express] and [Grunt]
+[Bootstrap 3 samples] rendered using [Pug] (former [Jade]), [NodeJS], [Express] and [Grunt]
 
 # bootstrap3-jade-node-express-grunt
 
@@ -179,6 +179,7 @@ Copyright (c) 2013 ALT-F1, We believe in the projects we work on™
 Licensed under the MIT license.
 
 
+[Agnieszka Gancarczyk]: https://github.com/agagancarczyk
 [ALT-F1]: http://www.alt-f1.be
 [AngularJS]: http://angularjs.org/
 [Bootstrap 3 samples]: http://twbs.github.io/bootstrap/getting-started/#examples
@@ -195,14 +196,18 @@ Licensed under the MIT license.
 [Grunt]: http://gruntjs.com/
 [html2jade]: https://github.com/donpark/html2jade
 [https://gist.github.com/onlinemad/6373852]: https://gist.github.com/onlinemad/6373852
+[Ilya Sheershoff]: https://github.com/sheershoff
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [Jade]: http://jade-lang.com/
 [Jasmine]: http://pivotal.github.io/jasmine/
 [Javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[Josh Crunkelton]: https://github.com/Crunkelton
 [Karma]: http://karma-runner.github.io/
+[Kobi Eisenberg]: https://github.com/kobieisen
 [log4js]: https://github.com/nomiddlename/log4js-node
 [Matan Eine]: https://github.com/mataneine
 [matchdep]: https://npmjs.org/package/matchdep
+[migrated from Express 3.2.6 to 4.8.0]: https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/8
 [Mocha]: http://visionmedia.github.io/mocha/
 [MongoDB]: http://www.mongodb.org/
 [MongoHQ]: https://www.mongohq.com
@@ -215,13 +220,9 @@ Licensed under the MIT license.
 [Petr Volny]: https://github.com/petrvolny
 [Professional Node JS book]: http://astore.amazon.fr/i14ynet-21/detail/1118185463
 [Professional Node JS Source Code]: https://github.com/ALT-F1/nodejs-professional
+[Pug]: https://github.com/pugjs/pug
 [Python]: http://www.python.org
 [Simon]: https://github.com/simonjmartin
 [Spacelab stylesheet]: http://bootswatch.com/2/spacelab/
 [Ubuntu]: http://www.ubuntu.com/
 [Yeoman]: http://yeoman.io/
-[Kobi Eisenberg]: https://github.com/kobieisen
-[Josh Crunkelton]: https://github.com/Crunkelton
-[Agnieszka Gancarczyk]: https://github.com/agagancarczyk
-[migrated from Express 3.2.6 to 4.8.0]: https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/8
-[Ilya Sheershoff]: https://github.com/sheershoff
