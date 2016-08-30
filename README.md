@@ -224,4 +224,4 @@ Licensed under the MIT license.
 [Josh Crunkelton]: https://github.com/Crunkelton
 [Agnieszka Gancarczyk]: https://github.com/agagancarczyk
 [migrated from Express 3.2.6 to 4.8.0]: https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/8
-[Ilya Sheershoff] https://github.com/sheershoff
+[Ilya Sheershoff]: https://github.com/sheershoff
