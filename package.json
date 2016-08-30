@@ -1,63 +1,63 @@
 {
-    "name": "bootstrap3-jade-node-express",
-    "description": "Display Bootstrap 3 sample templates using Jade, Node and Express",
-    "version": "0.0.0",
-    "homepage": "http://www.alt-f1.be",
-    "author": {
-        "name": "Abdelkrim Boujraf",
-        "email": "abo+github@alt-f1.be",
-        "url": "http://www.alt-f1.be"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kobieisen/bootstrap3-html-jade-node-express-grunt.git"
-
-    },
-    "bugs": {
-        "url": "https://github.com/ALT-F1/bootstrap3-jade-node-/issues?status=new&status=open"
-    },
-    "license": {
-        "type": "MIT",
-        "url": "http://www.alt-f1.be"
-    },
-    "private": true,
-    "scripts": {
-        "start": "grunt"
-    },
-    "dependencies": {
-        "express": "~4.8.0",
-        "body-parser": "~1.0.1",
-        "method-override": "2.3.5",
-        "cookie-parser": "1.4.1",
-        "express-session": "1.13.0",
-        "errorhandler": "1.4.3",
-        "serve-favicon": "2.3.0",
-        "morgan": "1.7.0",
-        "grunt": "~0.4.1",
-        "jade": "~0.34.1",
-        "googleapis": "~0.4.3",
-        "matchdep": "~0.1.2"
-    },
-    "_commentdependencies": {
-        "jade": "~1.0.2",
-        "mongoose": "~3.6.16",
-        "request": "~2.26.0",
-        "async": "~0.2.9"
-    },
-    "keywords": [
-        "nodejs",
-        "Express",
-        "Jade",
-        "Bootstrap 3.2.0"
-    ],
-    "devDependencies": {
-        "grunt-contrib-clean": "~0.5.0",
-        "grunt-contrib-connect": "~0.3.0",
-        "grunt-contrib-copy": "~0.4.1",
-        "grunt-contrib-jshint": "~0.6.2",
-        "grunt-contrib-watch": "~0.5.1",
-        "grunt-open": "~0.2.2",
-        "grunt-nodemon": "~0.1.0",
-        "grunt-markdown": "~0.4.0"
-    }
+  "name": "bootstrap3-jade-node-express",
+  "description": "Display Bootstrap 3 sample templates using Jade, Node and Express",
+  "version": "0.0.0",
+  "homepage": "http://www.alt-f1.be",
+  "author": {
+    "name": "Abdelkrim Boujraf",
+    "email": "abo+github@alt-f1.be",
+    "url": "http://www.alt-f1.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kobieisen/bootstrap3-html-jade-node-express-grunt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ALT-F1/bootstrap3-jade-node-/issues?status=new&status=open"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://www.alt-f1.be"
+  },
+  "private": true,
+  "scripts": {
+    "start": "grunt"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "cookie-parser": "1.4.1",
+    "errorhandler": "1.4.3",
+    "express": "~4.8.0",
+    "express-session": "1.13.0",
+    "googleapis": "~0.4.3",
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "method-override": "2.3.5",
+    "morgan": "1.7.0",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "2.3.0"
+  },
+  "_commentdependencies": {
+    "jade": "~1.0.2",
+    "mongoose": "~3.6.16",
+    "request": "~2.26.0",
+    "async": "~0.2.9"
+  },
+  "keywords": [
+    "nodejs",
+    "Express",
+    "Jade",
+    "pug",
+    "Bootstrap 3.2.0"
+  ],
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-open": "~0.2.2",
+    "grunt-nodemon": "~0.1.0",
+    "grunt-markdown": "~0.4.0"
+  }
 }
