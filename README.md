@@ -1,7 +1,7 @@
-bootstrap3-jade-node
+bootstrap3-pug-node
 ====================
 
-[Bootstrap 3 samples] rendered using [Pug] (former [Jade]), [NodeJS], [Express] and [Grunt]
+[Bootstrap 3 samples] rendered using [Pug] - former [Jade] - , [NodeJS], [Express] and [Grunt]
 
 # bootstrap3-jade-node-express-grunt
 
