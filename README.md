@@ -105,6 +105,10 @@ The following script will
 
 ## Release History
 
+v2016-11-08
+
++ update dependencies by [Frank Lemanschik] using [greenkeeper]
+
 v2016-08-30
 
 + [Ilya Sheershoff] has migrated the code due to a change in the name of "Jade" to "Pug" due to trademarks issues 
@@ -188,10 +192,12 @@ Licensed under the MIT license.
 [Connect]: http://www.senchalabs.org/connect/
 [Express]: http://expressjs.com/
 [Font Awesome]: http://fortawesome.github.io/Font-Awesome/
+[Frank Lemanschik]: https://github.com/frank-dspeed
 [Google APIs]: https://developers.google.com/compute/docs/api/libraries
 [Google Compute Engine API Reference]: https://developers.google.com/compute/docs/reference/latest/
 [Google Compute Engine API]: https://developers.google.com/compute/docs/api/libraries
 [Google Compute Engine]: https://cloud.google.com/products/compute-engine
+[greenkeeper]: https://greenkeeper.io/
 [Grunt-nodemon]: https://github.com/remy/nodemon
 [Grunt]: http://gruntjs.com/
 [html2jade]: https://github.com/donpark/html2jade
