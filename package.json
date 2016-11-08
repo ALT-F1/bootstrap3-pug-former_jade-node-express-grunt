@@ -24,15 +24,15 @@
     "start": "grunt"
   },
   "dependencies": {
-    "body-parser": "~1.0.1",
-    "cookie-parser": "1.4.1",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "1.4.3",
     "errorhandler": "1.4.3",
-    "express": "~4.8.0",
-    "express-session": "1.13.0",
-    "googleapis": "~0.4.3",
-    "grunt": "~0.4.1",
-    "matchdep": "~0.1.2",
-    "method-override": "2.3.5",
+    "express": "~4.14.0",
+    "express-session": "1.14.2",
+    "googleapis": "~14.1.0",
+    "grunt": "~1.0.1",
+    "matchdep": "~1.0.1",
+    "method-override": "2.3.6",
     "morgan": "1.7.0",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "2.3.0"
@@ -51,13 +51,13 @@
     "Bootstrap 3.2.0"
   ],
   "devDependencies": {
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.2",
-    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
     "grunt-open": "~0.2.2",
-    "grunt-nodemon": "~0.1.0",
-    "grunt-markdown": "~0.4.0"
+    "grunt-nodemon": "~0.4.2",
+    "grunt-markdown": "~0.7.0"
   }
 }
