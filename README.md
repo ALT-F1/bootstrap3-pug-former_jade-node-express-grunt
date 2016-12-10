@@ -205,7 +205,7 @@ Licensed under the MIT license.
 [Ilya Sheershoff]: https://github.com/sheershoff
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [Jade]: http://jade-lang.com/
-[Jasmine]: http://pivotal.github.io/jasmine/
+[Jasmine]: https://jasmine.github.io/
 [Javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [Josh Crunkelton]: https://github.com/Crunkelton
 [Karma]: http://karma-runner.github.io/
