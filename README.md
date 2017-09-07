@@ -214,7 +214,7 @@ Licensed under the MIT license.
 [Matan Eine]: https://github.com/mataneine
 [matchdep]: https://npmjs.org/package/matchdep
 [migrated from Express 3.2.6 to 4.8.0]: https://github.com/ALT-F1/bootstrap3-jade-node-express-grunt/pull/8
-[Mocha]: http://visionmedia.github.io/mocha/
+[Mocha]: http://mochajs.org/
 [MongoDB]: http://www.mongodb.org/
 [MongoHQ]: https://www.mongohq.com
 [MongoLab]: https://mongolab.com
