@@ -31,7 +31,7 @@ The following script will
 >
 > `cd bootstrap3-jade-node-express-grunt`
 >
-> `curl https://gist.github.com/onlinemad/6373852/raw/8439cc03c69cd171dc95a72874130b7f6a2e7c34/init.js > init.js`
+> `curl https://gist.githubusercontent.com/onlinemad/6373852/raw/2d660c6e5b8a04325fa41f72aabd8b4b1b1114ee/init.js > init.js`
 >
 > `npm install adm-zip`
 >
