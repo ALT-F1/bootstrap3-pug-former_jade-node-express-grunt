@@ -24,6 +24,7 @@
     "start": "grunt"
   },
   "dependencies": {
+    "adm-zip": "^0.4.11",
     "body-parser": "~1.15.2",
     "cookie-parser": "1.4.3",
     "errorhandler": "1.4.3",
@@ -31,10 +32,13 @@
     "express-session": "1.14.2",
     "googleapis": "~14.1.0",
     "grunt": "~1.0.1",
+    "js-beautify": "^1.8.8",
     "matchdep": "~1.0.1",
-    "method-override": "2.3.6",
+    "method-override": ">=2.3.10",
     "morgan": "1.7.0",
+    "prompt": "^1.0.0",
     "pug": "^2.0.0-beta6",
+    "request": "^2.88.0",
     "serve-favicon": "2.3.0"
   },
   "_commentdependencies": {
